@@ -7,6 +7,7 @@ import { useTranslationLang } from "@/layout/hooks/useTranslationLang";
 import LaySidebarFullScreen from "../lay-sidebar/components/SidebarFullScreen.vue";
 import LaySidebarBreadCrumb from "../lay-sidebar/components/SidebarBreadCrumb.vue";
 import LaySidebarTopCollapse from "../lay-sidebar/components/SidebarTopCollapse.vue";
+import LaySidebarLightDark from "../lay-sidebar/components/SidebarLightDark.vue";
 
 import GlobalizationIcon from "@/assets/svg/globalization.svg?component";
 import LogoutCircleRLine from "~icons/ri/logout-circle-r-line";
@@ -83,6 +84,7 @@ const { t, locale, translationCh, translationEn } = useTranslationLang();
       </el-dropdown>
       <!-- 全屏 -->
       <LaySidebarFullScreen id="full-screen" />
+      <LaySidebarLightDark />
       <!-- 消息通知 -->
       <LayNotice id="header-notice" />
       <!-- 退出登录 -->
